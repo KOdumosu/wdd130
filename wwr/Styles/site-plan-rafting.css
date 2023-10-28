@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Cantarell:italic|Droid+Serif:bold
+);
+
+:root {
+    --primary-color: #FF4433 --secondary-color: #355E3B --accent1-color: #d0f0c0 --accent2-color: #00FFFF --heading-font: serif;
+    --paragraph-font: serif;
+
+    --nav-background-color: #4682B4;
+    --nav-link-color: #808080 --nav-hover-link-color: #8c92ac --nav-hover-background-color: #cd7f32
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: rgb(207, 193, 154);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}

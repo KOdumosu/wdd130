@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="device-width,initial-scale=1-0">
+    <img src="images/logo.png" alt="Rafting Site Logo">
+    <title>Rafting Site Plan | Kehinde Olusegun Odumosu WDD 130</title>
+    <meta name="description"
+        content="The rafting site plan includes the site purpose, the target audience, branding information, and a style guide for the course website project.">
+    <meta name="author" content="Kehinde Olusegun Odumosu">
+    <link rel="stylesheet" href="styles/rafting.css">
+
+</head>
+<nav>
+    <a href="/index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="trips.html">Trips</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<body>
+    <header>
+        <h4>Rafting Trips</h4>
+    </header>
+    <main>
+
+    </main>
+    <aside class="box">
+        <h4>BOOK FOR YOUR RAFTING NOW</h4>
+        <form action="reservation.php" method="post">
+            <div class="elem-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="visitor_name" placeholder="Kenny Passion" pattern=[A-Z\sa-z]{3,20}
+                    required>
+            </div>
+            <div class="elem-group">
+                <label for="email">Your E-mail</label>
+                <input type="email" id="email" name="visitor_email" placeholder="odumosukennie@email.com" required>
+            </div>
+            <div class="elem-group">
+                <label for="phone">Your Phone</label>
+                <input type="tel" id="phone" name="visitor_phone" placeholder="+234-802-654-4083"
+                    pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+            </div>
+            <hr>
+            <div class="elem-group inlined">
+                <label for="adult">Adults</label>
+                <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+            </div>
+            <div class="elem-group inlined">
+                <label for="child">Children</label>
+                <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+            </div>
+            <div class="elem-group inlined">
+                <label for="adult">Days</label>
+                <input type="number" id="days" name="total_days" placeholder="2" min="1" required>
+            </div>
+            <div class="elem-group inlined">
+                <label for="checkin-date">Check-in Date</label>
+                <input type="date" id="checkin-date" name="checking" required>
+            </div>
+            <div class="elem-group inlined">
+                <label for="checkout-date">Check-out Date</label>
+                <input type="date" id="checkout-date" name="checkout" required>
+            </div>
+            <div class="elem-group">
+                <label for="river-selection">Select River Preference</label>
+                <select id="river-selection" name="river_preference" required>
+                    <option value="">Choose a River from the List</option>
+                    <option value="connecting">Kuramo Waters</option>
+                    <option value="adjacent">Kwa Ibo River</option>
+                    <option value="adjoining">Congo River</option>
+                    <option value="adjacent">Aba Rivers</option>
+                    <option value="adjacent">White Nile</option>
+                    <option value="adjacent">Oil River</option>
+                    <option value="adjacent">Nile</option>
+                    <option value="adjacent">Orange Rivers</option>
+                    <option value="adjacent">Eleko Beach</option>
+                    <option value="adjacent">Lagoons Rivers</option>
+                    <option value="adjacent">River Niger</option>
+                    <option value="adjacent">Kweme Rivers</option>
+                    <option value="adjacent">Benue Rivers</option>
+                </select>
+            </div>
+            <hr>
+            <div class="elem-group">
+                <label for="message">Anything Else?</label>
+                <textarea id="message" name="visitor_message"
+                    placeholder="Tell us anything else that might be important." required></textarea>
+            </div>
+            <button type="submit">Book Rafting</button>
+        </form>
+    </aside>
+
+    <footer>
+        <p>©2024 Rafting Site Document 🧍‍♂️ Kehinde Olu. Odumosu 🌴 Lagos, Nigeria 🎓 WDD 130</p>
+    </footer>
+</body>
