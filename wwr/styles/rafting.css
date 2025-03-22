@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #04101F; 
+    --secondary-color: #4888E1;
+    --accent1-color: #1F4F0D; 
+    --accent2-color: #ECECEC; 
+    --heading-font: "https://fonts.googleapis.com/css?family=Cantarell:italic|Droid+Serif:bold" serif;
+    --paragraph-font: "https://fonts.googleapis.com/css?family=Cantarell:italic|Droid+Serif:bold" serif;
+    --nav-background-color: #4682B4;
+    --nav-link-color: #808080; 
+    --nav-hover-link-color: #8c92ac; 
+    --nav-hover-background-color: #cd7f32;
+}
+
+header {
+    margin: 1rem auto;
+    display: grid;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
+    top: 30;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #7ad498;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #9b2d2d;
+  }
+
+
+#search {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+  .navigation a {
+    text-decoration: none;
+  }
+  
+   .hero {
+    position: relative;
+  }
+  
+  .hero h1, .hero article {
+    position: absolute;
+    /* Add any other styles for positioning (top, left, etc.) */
+  }
+
+ /* Hero section */
+.hero {
+    position: relative; /* Allows absolute positioning inside */
+    width: 100%;
+    max-width: 1200px; /* Adjust as per your layout */
+    margin: 0 auto;
+    overflow: hidden; /* Ensures no unwanted overflow */
+}
+
+/* Hero image */
+.hero-image {
+    width: 100%; /* Fills the container */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes extra space below inline images */
+}
+
+/* Hero Title */
+.hero-title {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 100%;
+    font-size: 4rem;
+    color: white;
+    background-color: rgba(7, 128, 13, 0.6);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero Article */
+.hero-article {
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    width: 80%;
+    height: 15%;
+    background-color: rgba(63, 50, 136, 0.6); /* Semi-transparent background */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Article Image */
+.article-img {
+    float: right;
+    margin-left: 15px;
+    max-width: 45%;
+    height: 95%;
+}
+
+/* Ensuring text does not overlap */
+.hero-article p {
+    margin: 0;
+    size: 40;
+}
