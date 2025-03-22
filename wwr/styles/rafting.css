@@ -16,7 +16,7 @@ header {
     display: grid;
     border-bottom: 1px solid #ccc;
     max-width: 1000px;
-    top: 30;
+    top: 30px;
   }
 
 ul {
@@ -111,10 +111,4 @@ ul {
     margin-left: 15px;
     max-width: 45%;
     height: 95%;
-}
-
-/* Ensuring text does not overlap */
-.hero-article p {
-    margin: 0;
-    size: 40;
 }
