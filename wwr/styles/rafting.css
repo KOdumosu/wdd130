@@ -14,6 +14,9 @@
 header {
     margin: 1rem auto;
     display: grid;
+    top: 15%;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
     border-bottom: 1px solid #ccc;
     max-width: 1000px;
     top: 30px;
@@ -27,32 +30,43 @@ ul {
     background-color: #7ad498;
   }
   
-  li {
-    float: left;
+  .navigation li {
+    flex: 1 1 auto;
+    float: right;
   }
   
   li a {
     display: block;
-    color: white;
+    color: rgb(168, 38, 38);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
+
+  .header img {
+    margin: 0 0.25rem 0 1rem;
+    width: 64px;
+   float: right;
+    height: auto;
+  }
   
   li a:hover {
-    background-color: #9b2d2d;
+    background-color: tomato;
   }
-
 
 #search {
     padding: 8px;
     font-size: 16px;
-    border: 2px solid #fff;
+    border: 2px solid #654cf0;
     border-radius: 5px;
 }
 
   .navigation a {
+    display: block;
+    color: rgb(24, 3, 71);
+    padding: 20px;
     text-decoration: none;
+    font-size: 1.2rem;
   }
   
    .hero {
@@ -83,9 +97,9 @@ ul {
 /* Hero Title */
 .hero-title {
     position: absolute;
-    top: 15%;
+    top: 5%;
     left: 15%;
-    width: 100%;
+    width: auto;
     font-size: 4rem;
     color: white;
     background-color: rgba(7, 128, 13, 0.6);
@@ -95,13 +109,13 @@ ul {
 /* Hero Article */
 .hero-article {
     position: absolute;
-    bottom: 30%;
+    bottom: 20%;
     left: 10%;
     width: 80%;
-    height: 15%;
-    background-color: rgba(63, 50, 136, 0.6); /* Semi-transparent background */
-    color: white;
-    padding: 20px;
+    height: 50%;
+    background-color: rgba(240, 204, 86, 0.6); /* Semi-transparent background */
+    color: rgb(12, 11, 11);
+    padding: 10px;
     border-radius: 10px;
 }
 
@@ -111,4 +125,114 @@ ul {
     margin-left: 15px;
     max-width: 45%;
     height: 95%;
+}
+
+* {
+  box-sizing: border-box;
+}
+.history-title {
+  text-align: center; 
+  display: block; 
+  margin-bottom: 10px; 
+}
+/* Gallery Section */
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Creates 5 equal columns */
+  gap: 15px; /* Space between images */
+  padding: 20px;
+  max-width: 100%;
+  background-color: #afc4d8;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -20px;
+}
+
+/* Figure Styling */
+.gallery figure {
+  margin: 0;
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%; /* Make images fill the grid column */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+/* Caption Styling */
+.gallery figcaption {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 5px;
+  font-weight: bold;
+}
+/* Section Layout */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; 
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Articles Styling */
+.content article {
+  width: 40%; /* Each article takes 30% of the width */
+  text-align: center;
+}
+
+/* Image Styling */
+.center-image img {
+  width: 100%;
+  max-width: 300px; 
+  height: auto;
+  border-radius: 10px;
+}
+  .content article, .center-image {
+      width: 100%; 
+  }
+ 
+  /* styling the footer from here */
+
+  footer {
+    background-color: #222; /* Dark background for contrast */
+    color: #fff; /* White text for readability */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 15px; /* Spaces out social media icons */
+}
+
+.sociallinks a img {
+    width: 30px; /* Adjust size of icons */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sociallinks a img:hover {
+    transform: scale(1.2); /* Adds hover effect */
 }
