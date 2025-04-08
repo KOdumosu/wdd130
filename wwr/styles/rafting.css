@@ -202,3 +202,128 @@ footer p {
 .social img {
   width: 1cm;
 }
+
+
+
+/* styling the Home page for rafting */
+
+.letterform {
+  width: 80%;
+  margin: 20px auto;
+}
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  color: #3E8E41;
+}
+.call-to-action {
+  text-align: center;
+  background-color: #FF5733;
+  color: white;
+  padding: 15px;
+  margin: 20px 0;
+  font-size: 18px;
+}
+.call-to-action a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 20px auto;
+}
+.newsletter-form input {
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+.newsletter-form button {
+  background-color: #3E8E41;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* making the design for the trips layouts page */
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  margin: 8px 0;
+}
+.call-t.a {
+  text-align: center;
+  background-color: #f13405;
+  color: white;
+  padding: 15px;
+  margin: 20px 0;
+  font-size: 50px;
+}
+.call-t.a a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.trip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.trip-description {
+  width: 48%;
+  margin-bottom: 20px;
+}
+.trip-description img {
+  width: 100%;
+  border-radius: 8px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+table, th, td {
+  border: 1px solid #ddd;
+}
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+th {
+  background-color: #3E8E41;
+  color: white;
+}
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
