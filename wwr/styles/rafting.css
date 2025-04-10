@@ -111,13 +111,13 @@ header, main, footer {
   padding: 10px;
   border-radius: 10px;
 }
-.hero article img {
+.hero-article img {
   float: right;
   margin: 2rem;
   width: 13rem;
 }
 
-.hero article p {
+.hero-article p {
   color: var(--secondary-color);
   font-size: 1.5rem;
   padding: 1rem;
