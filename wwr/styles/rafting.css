@@ -96,7 +96,6 @@ header, main, footer {
   width: auto;
   font-size: 4rem;
   color: white;
-  background-color: rgba(7, 128, 13, 0.6);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -179,11 +178,11 @@ header, main, footer {
 }
 
 /* styling the Home page for rafting */
-
 .letterform {
   width: 80%;
   margin: 20px auto;
 }
+
 section {
   background-color: white;
   padding: 20px;
@@ -191,6 +190,7 @@ section {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 h2 {
   color: #3E8E41;
 }
